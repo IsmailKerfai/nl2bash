@@ -1,0 +1,112 @@
+[
+    {"role": "user", "content": "List all files in the current directory including hidden ones."},
+    {"role": "assistant", "content": "ls -la"},
+
+    {"role": "user", "content": "Show the current working directory."},
+    {"role": "assistant", "content": "pwd"},
+
+    {"role": "user", "content": "Count the number of lines in a file named 'log.txt'."},
+    {"role": "assistant", "content": "wc -l log.txt"},
+
+    {"role": "user", "content": "Find all Python files in the current directory and subdirectories."},
+    {"role": "assistant", "content": "find . -name '*.py'"},
+
+    {"role": "user", "content": "Display the last 20 lines of a file called 'error.log'."},
+    {"role": "assistant", "content": "tail -n 20 error.log"},
+
+    {"role": "user", "content": "Show the contents of a file named 'config.txt'."},
+    {"role": "assistant", "content": "cat config.txt"},
+
+    {"role": "user", "content": "Search for the word 'ERROR' in all log files."},
+    {"role": "assistant", "content": "grep 'ERROR' *.log"},
+
+    {"role": "user", "content": "Create a new directory called 'backup'."},
+    {"role": "assistant", "content": "mkdir backup"},
+
+    {"role": "user", "content": "Copy a file named 'data.txt' to 'data_backup.txt'."},
+    {"role": "assistant", "content": "cp data.txt data_backup.txt"},
+
+    {"role": "user", "content": "Show disk space usage in human-readable format."},
+    {"role": "assistant", "content": "df -h"},
+
+    {"role": "user", "content": "Display the first 10 lines of a file called 'readme.txt'."},
+    {"role": "assistant", "content": "head -n 10 readme.txt"},
+
+    {"role": "user", "content": "List all running processes and filter for 'python' processes."},
+    {"role": "assistant", "content": "ps aux | grep python"},
+
+    {"role": "user", "content": "Find files larger than 100MB in the current directory."},
+    {"role": "assistant", "content": "find . -size +100M"},
+
+    {"role": "user", "content": "Show the current date and time."},
+    {"role": "assistant", "content": "date"},
+
+    {"role": "user", "content": "Count the number of words in a file named 'essay.txt'."},
+    {"role": "assistant", "content": "wc -w essay.txt"},
+
+    {"role": "user", "content": "Move a file called 'old_name.txt' to 'new_name.txt'."},
+    {"role": "assistant", "content": "mv old_name.txt new_name.txt"},
+
+    {"role": "user", "content": "Show who is currently logged in to the system."},
+    {"role": "assistant", "content": "whoami"},
+
+    {"role": "user", "content": "Display the file type of 'mystery_file'."},
+    {"role": "assistant", "content": "file mystery_file"},
+
+    {"role": "user", "content": "Sort the contents of a file called 'names.txt' alphabetically."},
+    {"role": "assistant", "content": "sort names.txt"},
+
+    {"role": "user", "content": "Find all files modified in the last 24 hours."},
+    {"role": "assistant", "content": "find . -mtime -1"},
+
+    {"role": "user", "content": "Show the size of all files in the current directory."},
+    {"role": "assistant", "content": "ls -lh"},
+
+    {"role": "user", "content": "Search for files containing the text 'password' in their content."},
+    {"role": "assistant", "content": "grep -r 'password' ."},
+
+    {"role": "user", "content": "Display detailed information about a file called 'document.pdf'."},
+    {"role": "assistant", "content": "stat document.pdf"},
+
+    {"role": "user", "content": "Show the unique lines in a file named 'duplicates.txt'."},
+    {"role": "assistant", "content": "sort duplicates.txt | uniq"},
+
+    {"role": "user", "content": "Find all empty files in the current directory."},
+    {"role": "assistant", "content": "find . -empty -type f"},
+
+    {"role": "user", "content": "Display the directory size of 'project_folder'."},
+    {"role": "assistant", "content": "du -sh project_folder"},
+
+    {"role": "user", "content": "Show system uptime information."},
+    {"role": "assistant", "content": "uptime"},
+
+    {"role": "user", "content": "Create an empty file called 'placeholder.txt'."},
+    {"role": "assistant", "content": "touch placeholder.txt"},
+
+    {"role": "user", "content": "Display the third column of a CSV file named 'data.csv'."},
+    {"role": "assistant", "content": "cut -d',' -f3 data.csv"},
+
+    {"role": "user", "content": "Check which version of the system is running."},
+    {"role": "assistant", "content": "uname -a"},
+
+    {"role": "user", "content": "Show memory usage information."},
+    {"role": "assistant", "content": "free -h"},
+
+    {"role": "user", "content": "Find the location of the 'python' executable."},
+    {"role": "assistant", "content": "which python"},
+
+    {"role": "user", "content": "Display the current user's groups."},
+    {"role": "assistant", "content": "groups"},
+
+    {"role": "user", "content": "Show the user ID and group information."},
+    {"role": "assistant", "content": "id"},
+
+    {"role": "user", "content": "Make a script file executable."},
+    {"role": "assistant", "content": "chmod +x script.sh"},
+
+    {"role": "user", "content": "Replace all occurrences of 'old_text' with 'new_text' in a file."},
+    {"role": "assistant", "content": "sed 's/old_text/new_text/g' filename.txt"},
+
+    {"role": "user", "content": "Extract the first field from each line using space as delimiter."},
+    {"role": "assistant", "content": "awk '{print $1}' filename.txt"}
+]
