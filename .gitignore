@@ -5,4 +5,7 @@ __pycache__/
 .history
 .vscode/
 .venv
+.idea
 
+IsmailKerfai
+git remote add origin https://github.com/IsmailKerfai/nl2bash.git
